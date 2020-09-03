@@ -14,7 +14,19 @@ public class Book {
     Long BookId;
     String title;
     Long Author;
+    String ISBN;
 
     @OneToMany(mappedBy = "ChapterId")
     private List<Chapter> chapters;
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "BookId=" + BookId +
+                ", title='" + title + '\'' +
+                ", Author=" + Author +
+                ", ISBN='" + ISBN + '\'' +
+                ", chapters=" + chapters +
+                '}';
+    }
 }

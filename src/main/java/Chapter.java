@@ -11,7 +11,7 @@ public class Chapter {
     @Id
     @GeneratedValue
     Long ChapterId;
-
+    String title;
     Long ChapterAuthor;
 
     @ManyToOne
